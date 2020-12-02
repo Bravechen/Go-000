@@ -1,0 +1,118 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page>h3 {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.home-page > .stu-list {
+  display: block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.home-page > .stu-list > .item {
+  display: flex;
+  align-items: center;
+
+  height: 56px;
+
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.home-page > .stu-list > .item > .wrapper {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home-page > .stu-list > .item > .operate,
+.home-page > .stu-list > .item > .place1 {
+  flex: 2;
+}
+
+.home-page > .stu-list > .item > .wrapper > div {
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page > .stu-list > .t-header {
+  background: #6989ad;
+  color: white;
+}
+
+.home-page > .stu-list > .item.editor-line:nth-child(2n+1) {
+  background: #b1d5ff;
+}
+
+.home-page > .stu-list > .item.editor-line>.wrapper>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page > .stu-list > .item.editor-line>.wrapper>div>span[data-type="editor-item"] {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 4px;
+
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  cursor: pointer;
+}
+
+.home-page > .stu-list > .item.editor-line>.operate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  color: white;
+}
+
+.home-page > .ctrl-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+
+}
+
+
+
+
+

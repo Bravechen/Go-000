@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/common.css" rel="stylesheet" />
+    <link href="../static/stulist.css" rel="stylesheet" />
+</head>
+<body>
+    <main id="app" class="home-page">
+      <h3>学生成绩列表</h3>
+      <section class="stu-list">
+        <div class="item t-header">
+          <div class="wrapper">
+            <div class="stu_name">姓名</div>
+            <div class="stu_score">分数</div>
+            <div class="stu_ranking">排名</div>
+          </div>
+          <div class="place1"></div>
+        </div>
+        <div class="item editor-line">
+          <div class="wrapper">
+            <div class="stu_name"><span data-type="editor-item">张三</span></div>
+            <div class="stu_score"><span data-type="editor-item">100</span></div>
+            <div class="stu_ranking"><span data-type="editor-item">999</span></div>
+          </div>
+          <div class="operate"></div>
+        </div>
+      </section>
+    </main>
+    <script src="../static/axios.min.js"></script>
+    <script src="../static/stulist.js"></script>
+</body>
+</html>

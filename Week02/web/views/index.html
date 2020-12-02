@@ -1,0 +1,53 @@
+{{ define "content" }}
+<main id="app" class="home-page">
+  <h3>学生成绩录入</h3>
+  <section class="stu-list">
+    <div class="item t-header">
+      <div class="wrapper">
+        <div class="stu_name">姓名</div>
+        <div class="stu_score">分数</div>
+        <div class="stu_ranking">排名</div>
+      </div>
+      <div class="place1"></div>
+    </div>
+    <div class="item editor-line">
+      <div class="wrapper">
+        <div class="stu_name"><span class="editor-item" data-type="toggleEditor">张三</span></div>
+        <div class="stu_score"><span class="editor-item" data-type="toggleEditor">100</span></div>
+        <div class="stu_ranking"><span class="editor-item" data-type="toggleEditor">999</span></div>
+      </div>
+      <div class="operate">
+        <a href="javascript:void 0" data-type="deleteLine">删除</a>
+      </div>
+    </div>
+  </section>
+  <div class="ctrl-box">
+    <a class="ctrl-btn" href="javascript:void 0" data-type="addLine">增加行</a>
+  </div>
+  <div class="submit-box">
+    <a class="ctrl-btn" href="javascript:void 0" data-type="confirmSubmit">确认提交</a>
+  </div>
+  <br />
+  <h3>学生信息列表</h3>
+  <section class="stu-list">
+    <div class="item t-header">
+      <div class="wrapper">
+        <div class="stu_name">姓名</div>
+        <div class="stu_score">分数</div>
+        <div class="stu_ranking">排名</div>
+      </div>
+      <div class="place1"></div>
+    </div>
+    {{ range .StuList }}
+    <div class="item editor-line">
+      <div class="wrapper">
+        <div class="stu_name"><span data-type="editor-item">{{ .StuName }}</span></div>
+        <div class="stu_score"><span data-type="editor-item">{{ .StuScore }}</span></div>
+        <div class="stu_ranking"><span data-type="editor-item">{{ .StuRanking }}</span></div>
+      </div>
+      <div class="operate"></div>
+    </div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}
